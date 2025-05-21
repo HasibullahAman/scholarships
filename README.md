@@ -1,4 +1,5 @@
 #scholarships
+
 A web application that helps users discover and apply for international scholarships. Designed to support students in finding opportunities to study abroad.
 
 <<<<<<< HEAD
@@ -37,8 +38,10 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-=======
+# Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
 # scholarships
- A web application that helps users discover and apply for international scholarships. Designed to support students in finding opportunities to study abroad. 
->>>>>>> bceaab707b6563f50fb6a9afa86c8a7f79beff13
+
+A web application that helps users discover and apply for international scholarships. Designed to support students in finding opportunities to study abroad.
+
+> > > > > > > bceaab707b6563f50fb6a9afa86c8a7f79beff13
