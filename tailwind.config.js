@@ -8,5 +8,7 @@ module.exports = {
   theme: {
     extend: {},
   },
-  plugins: [require("tailwindcss-rtl")],
+  // plugins: [require("tailwindcss-rtl")],
 };
+
+
