@@ -1,99 +1,151 @@
+import Card1 from "@/components/opportunities/01_Card";
+import Card2 from "@/components/opportunities/02_Card";
+import Card3 from "@/components/opportunities/03_Card ";
+import Card4 from "@/components/opportunities/04_Card";
+import Card5 from "@/components/opportunities/05_Card";
+import Card6 from "@/components/opportunities/06_Card";
+
 const page = () => {
     return (
-        <div className="flex flex-col items-center h-[50%]">
-            {/* Left Side - Image */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 w-[80%] lg:grid-cols-3 gap-4 p-4">
+        <>
+            {/* // first Section */}
+            <div className="flex flex-col items-center h-[50%]">
+                {/* Left Side - Image */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 w-[80%] lg:grid-cols-3 gap-4 p-4">
 
-                {/* Name Card */}
-                <div className="bg-blue-100 rounded-xl shadow p-4 mx-2! my-10!">
-                    <div className="card bg-base-100 w-86! shadow-sm">
-                        <figure>
-                            <img
-                                src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                                alt="Shoes" />
-                        </figure>
-                        <div className="card-body!">
-                            <h2 className="card-title!">Card Title</h2>
-                            <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
-                            <div className="card-actions! justify-end!">
-                                <button className="btn! btn-primary!">Buy Now</button>
-                            </div>
-                        </div>
-                    </div>
+                    {/* First Card */}
+                    <Card1 />
+
+
+                    {/* Second Card */}
+                    <Card2 />
+
+
+
+                    {/* third Card */}
+                    <Card3 />
+
                 </div>
 
-                {/* Father's Name Card */}
-                <div className="bg-green-100 rounded-xl shadow p-4 my-10!">
-                    <div className="card bg-base-100 w-96 shadow-sm px-2">
-                        <figure>
-                            <img
-                                src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                                alt="Shoes" />
-                        </figure>
-                        <div className="card-body">
-                            <h2 className="card-title">Card Title</h2>
-                            <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
-                            <div className="card-actions justify-end">
-                                <button className="btn btn-primary">Buy Now</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
-                {/* Last Name Card */}
-                <div className="bg-yellow-100 rounded-xl shadow p-4 mx-2! my-10!">
-                    <div className="card bg-base-100 w-96 shadow-sm">
-                        <figure>
-                            <img
-                                src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                                alt="Shoes" />
-                        </figure>
-                        <div className="card-body">
-                            <h2 className="card-title">Card Title</h2>
-                            <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
-                            <div className="card-actions justify-end">
-                                <button className="btn btn-primary">Buy Now</button>
-                            </div>
-                        </div>
-                    </div>
+                {/* Zigzag Bottom Divider (flip vertically) */}
+                <div style={{ height: '30px', overflow: 'hidden', width: '100%' }}>
+                    <svg
+                        viewBox="0 0 100 10"
+                        preserveAspectRatio="none"
+                        style={{ height: '100%', width: '100%' }}
+                    >
+                        <polygon
+                            fill="#f8f9fa"
+                            points="0,0 5,10 10,0 15,10 20,0 25,10 30,0 35,10 40,0 45,10 50,0 55,10 60,0 65,10 70,0 75,10 80,0 85,10 90,0 95,10 100,0"
+                        />
+                    </svg>
                 </div>
-
             </div>
-            <div style={{ height: '150px', overflow: 'hidden', width: '100%' }}>
-                <svg
-                    viewBox="0 0 500 150"
-                    preserveAspectRatio="none"
-                    style={{ height: '100%', width: '100%' }}
-                >
-                    <path
-                        d="M0.00,49.99 C150.00,150.00 349.20,-49.99 500.00,49.99 L500.00,150.00 L0.00,150.00 Z"
-                        style={{ stroke: 'none', fill: '#f8f9fa' }}
-                    ></path>
-                </svg>
+
+
+
+            {/* // Second section */}
+            <div className="flex flex-col items-center h-[50%]">
+                {/* Zigzag Top Divider */}
+                <div style={{ height: '30px', overflow: 'hidden', width: '100%' }}>
+                    <svg
+                        viewBox="0 0 100 10"
+                        preserveAspectRatio="none"
+                        style={{ height: '100%', width: '100%' }}
+                    >
+                        <polygon
+                            fill="#f8f9fa"
+                            points="0,10 5,0 10,10 15,0 20,10 25,0 30,10 35,0 40,10 45,0 50,10 55,0 60,10 65,0 70,10 75,0 80,10 85,0 90,10 95,0 100,10"
+                        />
+                    </svg>
+                </div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 w-[80%] lg:grid-cols-3 gap-4 p-4">
+
+                    {/* Second row first Card */}
+                    <Card4 />
+
+
+
+                    {/* Second Row second Card */}
+                    <Card5 />
+
+
+
+                    {/* Second row Third Card */}
+                    <Card6 />
+
+                </div>
+
+
+                {/* Zigzag Bottom Divider (flip vertically) */}
+                <div style={{ height: '30px', overflow: 'hidden', width: '100%' }}>
+                    <svg
+                        viewBox="0 0 100 10"
+                        preserveAspectRatio="none"
+                        style={{ height: '100%', width: '100%' }}
+                    >
+                        <polygon
+                            fill="#f8f9fa"
+                            points="0,0 5,10 10,0 15,10 20,0 25,10 30,0 35,10 40,0 45,10 50,0 55,10 60,0 65,10 70,0 75,10 80,0 85,10 90,0 95,10 100,0"
+                        />
+                    </svg>
+                </div>
             </div>
-        </div>
+
+
+
+            {/* // Third section */}
+            <div className="flex flex-col items-center h-[50%]">
+                {/* Zigzag Top Divider */}
+                <div style={{ height: '30px', overflow: 'hidden', width: '100%' }}>
+                    <svg
+                        viewBox="0 0 100 10"
+                        preserveAspectRatio="none"
+                        style={{ height: '100%', width: '100%' }}
+                    >
+                        <polygon
+                            fill="#f8f9fa"
+                            points="0,10 5,0 10,10 15,0 20,10 25,0 30,10 35,0 40,10 45,0 50,10 55,0 60,10 65,0 70,10 75,0 80,10 85,0 90,10 95,0 100,10"
+                        />
+                    </svg>
+                </div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 w-[80%] lg:grid-cols-3 gap-4 p-4">
+
+                    {/* Second row first Card */}
+                    <Card4 />
+
+
+
+                    {/* Second Row second Card */}
+                    <Card5 />
+
+
+
+                    {/* Second row Third Card */}
+                    <Card6 />
+
+                </div>
+
+
+                {/* divider */}
+                <div style={{ height: '150px', overflow: 'hidden', width: '100%' }}>
+                    <svg
+                        viewBox="0 0 500 150"
+                        preserveAspectRatio="none"
+                        style={{ height: '100%', width: '100%' }}
+                    >
+                        <path
+                            d="M0.00,49.99 C150.00,150.00 349.20,-49.99 500.00,49.99 L500.00,150.00 L0.00,150.00 Z"
+                            style={{ stroke: 'none', fill: '#f8f9fa' }}
+                        ></path>
+                    </svg>
+                </div>
+            </div>
+
+        </>
+
     )
 }
 
-export default page
-
-
-
-
-
-// Card
-//     < div className = "card bg-base-100 w-96 shadow-sm" >
-//   <figure className="px-10 pt-10">
-//     <img
-//       src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-//       alt="Shoes"
-//       className="rounded-xl" />
-//   </figure>
-//   <div className="card-body items-center text-center">
-//     <h2 className="card-title">Card Title</h2>
-//     <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
-//     <div className="card-actions">
-//       <button className="btn btn-primary">Buy Now</button>
-//     </div>
-//   </div>
-// </div >
+export default page;
