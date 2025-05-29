@@ -57,6 +57,11 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
+        {/* Mobail */}
+        <div onClick={handleNav} className="md:hidden cursor-pointer ml-auto! p-3! ">
+          <AiOutlineMenu size={25} />
+        </div>
+        {/* logo */}
         <div className="flex w-1/4 justify-start sm:justify-end ml-8!">
           <Link href="/">
             <Image
@@ -70,15 +75,8 @@ const Navbar = () => {
             />
           </Link>
         </div>
-
-
-
-        {/* Mobail */}
-
-        <div onClick={handleNav} className="md:hidden cursor-pointer ml-auto! p-3! ">
-          <AiOutlineMenu size={25} />
-        </div>
       </div>
+
       <div className={
         menuOpen
           ? "fixed left-0 top-0 w-[65%] sm:hidden h-screen bg-[#ecf0f3] p-10 ease-in duration-500"
