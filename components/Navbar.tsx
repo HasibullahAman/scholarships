@@ -16,7 +16,7 @@ const Navbar = () => {
     setMenuOpen(!menuOpen)
   }
   return (
-    <nav className="fixed w-full h-24 shadow-xl bg-white">
+    <nav className="fixed w-full h-24 shadow-xl bg-base-200" >
       <div className="flex items-center h-full w-full px-4 2xl:px-16">
         <div className="w-1/4">
           <Link href="/">
@@ -35,22 +35,27 @@ const Navbar = () => {
           <ul className="hidden sm:flex">
             <li className="ml-20! lowercase lg:uppercase hover:border-b text-xl">
               <Link href="/">
-                Why us
+                خانه
               </Link>
             </li>
             <li className="ml-20! uppercase hover:border-b text-xl">
               <Link href="/contact">
-                Contact us
+                مقاله ها
               </Link>
             </li>
             <li className="ml-20! uppercase hover:border-b text-xl">
               <Link href="/services">
-                Blog
+                فرصت ها
+              </Link>
+            </li>
+            <li className="ml-20! lowercase lg:uppercase hover:border-b text-xl">
+              <Link href="/">
+                خدمات
               </Link>
             </li>
             <li className="ml-20! last:mr-20! uppercase hover:border-b text-xl">
               <Link href="/services">
-                our Services
+                ارتباط با ما
               </Link>
             </li>
           </ul>
@@ -74,22 +79,22 @@ const Navbar = () => {
           <ul>
             <li onClick={() => setMenuOpen(false)} className="py-4! cursor-pointer">
               <Link href="/">
-                Home
+                مینوی اصلی
               </Link>
             </li>
             <li onClick={() => setMenuOpen(false)} className="py-4! cursor-pointer">
               <Link href="/about">
-                About
+                درباره ما
               </Link>
             </li>
             <li onClick={() => setMenuOpen(false)} className="py-4! cursor-pointer">
               <Link href="/contact">
-                Contact
+                ارتباط با ما
               </Link>
             </li>
             <li onClick={() => setMenuOpen(false)} className="py-4! cursor-pointer">
               <Link href="/services">
-                Services
+                خدمات
               </Link>
             </li>
           </ul>

@@ -1,12 +1,15 @@
 @import "tailwindcss";
+@plugin "daisyui";
 @import "tailwindcss/preflight";
 @import "tailwindcss/utilities";
 
 /* Optional: Reset some defaults */
+@plugin "daisyui" {
+  themes: light --default, dark --prefersdark, nord;
+}
+
 body {
   font-family: 'Vazir', sans-serif;
-  /* direction: rtl; */
-  /* text-align: right; */
-  background-color: #f9fafb;
-  color: #111827;
+  text-align: center;
+  scroll-padding-top: 6rem;
 }

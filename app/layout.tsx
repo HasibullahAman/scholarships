@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "../components/Navbar";
+import Footer from "@/components/Footer";
 
 
 export const metadata: Metadata = {
@@ -14,13 +15,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" data-theme="nord">
       <head>
         <link href="https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir.css" rel="stylesheet" />
       </head>
-      <body>
+      <body className="min-h-screen flex flex-col bg-base-200">
         <Navbar />
-        <main className="p-4">{children}</main>
+        <main className="flex-grow p-4 pt-24!">{children}</main>
+        <Footer />
       </body>
     </html>
   );
