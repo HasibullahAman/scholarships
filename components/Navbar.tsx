@@ -105,6 +105,7 @@ const Navbar = () => {
           <AiOutlineTwitter size={30} className="mx-5! cursor-pointer" />
         </div>
       </div>
+
     </nav>
   );
 };

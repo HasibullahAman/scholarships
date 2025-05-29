@@ -1,7 +1,19 @@
 const Footer = () => {
     return (
         <div className="">
-            <footer className="footer footer-horizontal shadow-inner footer-center
+            <div style={{ height: '100px', overflow: 'hidden', width: '100%' }}>
+                <svg
+                    viewBox="0 0 500 150"
+                    preserveAspectRatio="none"
+                    style={{ height: '100%', width: '100%' }}
+                >
+                    <path
+                        d="M0.00,49.99 C150.00,150.00 271.49,-49.99 500.00,49.99 L500.00,0.00 L0.00,0.00 Z"
+                        style={{ stroke: 'none', fill: '#f8f9fa' }}
+                    ></path>
+                </svg>
+            </div>
+            <footer className="footer footer-horizontal footer-center
              bg-base-200 text-base-content rounded p-10 grid">
                 <nav className="grid sm:grid-flow-col sm:text-xl sm:gap-14">
                     <a className="link link-hover">خانه</a>
