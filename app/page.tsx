@@ -1,19 +1,22 @@
 export default function Home() {
   return (
-    <div className="flex flex-col items-center shadow ">
+    <div className="flex flex-col items-center shadow">
       {/* Section 1 */}
-      <div className="hero flex-col bg-base-300 w-[80%] min-h-screen mx-auto overflow-hidden">
+      <div className="relative hero flex-col bg-base-300 w-[80%] min-h-screen rounded-b-3xl mx-auto overflow-hidden pt-24">
+        {/* Background image inside this div only */}
         <div
-          className="absolute inset-0 bg-no-repeat bg-center opacity-5"
+          className="absolute inset-0 bg-no-repeat bg-center bg-contain opacity-5 z-0"
           style={{ backgroundImage: "url('/image/Travel.svg')" }}
         ></div>
-        <div className="text-center">
-          <div className="max-w-md">
+
+        {/* Text content */}
+        <div className="relative z-10 text-center">
+          <div className="max-w-md mx-auto">
             <h1 className="text-5xl! font-bold! mb-6!">خوش آمدید</h1>
             <p className="py-10!">
-              ما در اینجا بهترین فرصت های تحصیلی که از کشور های مختلف آسیایی و اورپایی به اعلان گزاشته میشود را به شما ارایه خواهیم کرد برای دیدن آخرین فرصت از فرصت های اخیر دیدن کنید
+              ما در اینجا بهترین فرصت های تحصیلی که از کشور های مختلف آسیایی و اورپایی به اعلان گزاشته میشود را به شما ارایه خواهیم کرد. برای دیدن آخرین فرصت‌ها از فرصت‌های اخیر دیدن کنید.
             </p>
-            <button className="btn! btn-primary!">جدید ترین فرصت ها</button>
+            <button className="btn! btn-primary!">جدیدترین فرصت‌ها</button>
           </div>
         </div>
       </div>
@@ -33,7 +36,7 @@ export default function Home() {
 
 
       {/* Section 2 */}
-      <div style={{ height: '100px', overflow: 'hidden', width: '100%' }}>
+      <div style={{ height: '100px', overflow: 'hidden', width: '100%', }}>
         <svg
           viewBox="0 0 500 150"
           preserveAspectRatio="none"
@@ -46,17 +49,9 @@ export default function Home() {
         </svg>
       </div>
       <div className="flex flex-col sm:flex-row w-[80%] h-auto mx-auto mt-4!">
-        {/* Left Side - Image */}
-        <div className="w-full sm:w-1/2 flex justify-center items-center p-4">
-          <img
-            src="/image/Topic.svg"
-            alt="Travel"
-            className="max-w-full h-auto"
-          />
-        </div>
 
         {/* Right Side - Text Content */}
-        <div className="w-full mt-2! sm:mt-0! sm:w-1/2 flex items-center justify-center bg-base-300 p-6 shadow-lg">
+        <div className="w-full mt-2! sm:mt-0! sm:w-1/2 flex rounded-4xl items-center justify-center bg-base-300 p-6 shadow-lg">
           <div className="max-w-md text-center">
             <h1 className="text-۲xl! font-bold! text-base-content!">چی چیزی میتواند چانس شما را برای موفقیت  در بورسیه ها زیاد کند؟</h1>
             <p className="py-6! text-base-content!">
@@ -64,6 +59,14 @@ export default function Home() {
             </p>
             <button className="btn! btn-primary!">مقاله ها</button>
           </div>
+        </div>
+        {/* Left Side - Image */}
+        <div className="w-full sm:w-1/2 flex justify-center items-center p-4">
+          <img
+            src="/image/Topic.svg"
+            alt="Travel"
+            className="max-w-full h-auto"
+          />
         </div>
       </div>
       <div style={{ height: '150px', overflow: 'hidden', width: '100%' }}>
@@ -98,7 +101,7 @@ export default function Home() {
       </div>
       <div className="flex flex-col sm:flex-row w-[80%] h-auto mx-auto">
         {/* left Side - Text Content */}
-        <div className="w-full mt-2! sm:mt-0! sm:w-1/2 flex items-center justify-center bg-base-300 p-6 shadow-lg">
+        <div className="w-full mt-2! sm:mt-0! sm:w-1/2 flex rounded-4xl items-center justify-center bg-base-300 p-6 shadow-lg">
           <div className="max-w-md text-center">
             <h1 className="text-۲xl! font-bold! text-base-content!">تیم ما چی خدماتی به شما ارایه میکند؟</h1>
             <p className="py-6! text-base-content!">
@@ -149,17 +152,9 @@ export default function Home() {
         </svg>
       </div>
       <div className="flex flex-col sm:flex-row w-[80%] h-auto mx-auto">
-        {/* Left Side - Image */}
-        <div className="w-full sm:w-1/2 flex justify-center items-center p-4">
-          <img
-            src="/image/call us.svg"
-            alt="Travel"
-            className="max-w-full h-auto"
-          />
-        </div>
 
         {/* Right Side - Text Content */}
-        <div className="w-full mt-2! sm:mt-0! sm:w-1/2 flex items-center justify-center bg-base-300 p-6 shadow-lg">
+        <div className="w-full py-4! sm:mt-0! m sm:w-1/2 flex rounded-4xl items-center justify-center bg-base-300 p-6 shadow-lg">
           <div className="max-w-md text-center">
             <h1 className="text-۲xl! font-bold! text-base-content">ما میتوانم شما را در بدست آوردن آخرین فرصت ها کمک کنیم</h1>
             <p className="py-6! text-base-content!">
@@ -167,6 +162,14 @@ export default function Home() {
             </p>
             <button className="btn! btn-primary!">ارتباط با ما</button>
           </div>
+        </div>
+        {/* Left Side - Image */}
+        <div className="w-full sm:w-1/2 flex justify-center items-center p-4">
+          <img
+            src="/image/call us.svg"
+            alt="Travel"
+            className="max-w-full h-auto"
+          />
         </div>
       </div>
       <div style={{ height: '150px', overflow: 'hidden', width: '100%' }}>
@@ -181,6 +184,12 @@ export default function Home() {
           ></path>
         </svg>
       </div>
+
+
+
+      {/* Section 5 */}
+      {/* frequntly asked quation */}
+
     </div>
   );
 
