@@ -7,7 +7,7 @@ const Card1 = () => {
     const router = useRouter();
 
     const handleClick = () => {
-        router.push('/opportunities/scholarships')
+        router.push('/opportunities/indian')
     }
 
     return (
